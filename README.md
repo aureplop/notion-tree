@@ -18,7 +18,7 @@ $ pip install notion-tree
 ## Usage
 
 ```
-$ python notiontree/hierarchy.py --dir path/to/local/root --root-parent-url https://www.notion.so/id/to/parent/of/local/root
+$ python -m notiontree.hierarchy --dir path/to/local/root --root-parent-url https://www.notion.so/id/to/parent/of/local/root
 ```
 
 Assuming you had this hierarchy on Notion:
