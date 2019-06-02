@@ -18,6 +18,8 @@ $ pip install notion-tree
 ## Usage
 
 ```
+# Obtain the `token_v2` value by inspecting your browser cookies on a logged-in session on Notion.so
+$ NOTION_TOKEN=...
 $ python -m notiontree.hierarchy --dir path/to/local/root --root-parent-url https://www.notion.so/id/to/parent/of/local/root
 ```
 
