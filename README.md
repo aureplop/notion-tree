@@ -9,12 +9,10 @@ Hierarchic operations with Notion API, thanks to [notion-py](https://github.com/
 
 ## Installation
 
-Not available on Pypi at the moment.
-
 ```sh
-$ git clone git@github.com:aureplop/notion-tree.git
-$ cd notion-tree
-$ pip install -r requirements.txt
+# Required as PyPI does not accept package with dependency links
+$ pip install git+https://github.com/aureplop/notion-py.git@feat-import-file#egg=notion-999
+$ pip install notion-tree
 ```
 
 ## Usage
@@ -54,7 +52,6 @@ workspace
 
 - Split 'notiontree/hierarchy.py' to multiple modules.
 - Use 'click' for CLI.
-- Package app.
 - Document --github-wiki-root in README.
 - Create stub pages in another page than 'root' to be able to import root index.html w/o removing other stub pages.
 - Accept other filenames for index files (currently limited to 'index.md').
