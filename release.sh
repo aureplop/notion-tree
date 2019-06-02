@@ -1,5 +1,10 @@
+set -e
+
 # Ensure build tools are installed and up-to-date.
 pip install -U pip setuptools wheel
+
+# Clean existing builds
+rm -rf dist/
 
 # Detect version.
 version=$(grep version notiontree/__init__.py | sed -E 's/.*[\"'"'"'](.*)[\"'"'"'].*/\1/')
